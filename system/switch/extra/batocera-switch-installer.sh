@@ -3,7 +3,7 @@
 ######################################################################
 #--------------------------------------------------------------------- 
 APPNAME="SWITCH-EMULATION FOR 41+" 
-ORIGIN="github.com/foclabroc/batocera-switch" 
+ORIGIN="github.com/AndyX90/batocera-switch" 
 #---------------------------------------------------------------------
 ######################################################################
 ORIGIN="${ORIGIN^^}"
@@ -348,7 +348,7 @@ echo -e "${X} "
 rm -rf /userdata/system/switch/extra/installation 2>/dev/null
 rm /tmp/batocera-switch-updater.sh 2>/dev/null 
 mkdir -p /tmp 2>/dev/null
-wget -q --tries=10 --no-check-certificate --no-cache --no-cookies -O "/tmp/batocera-switch-updater.sh" "https://raw.githubusercontent.com/foclabroc/batocera-switch/main/system/switch/extra/batocera-switch-updater.sh" 
+wget -q --tries=10 --no-check-certificate --no-cache --no-cookies -O "/tmp/batocera-switch-updater.sh" "https://raw.githubusercontent.com/AndyX90/batocera-switch/main/system/switch/extra/batocera-switch-updater.sh" 
 sed -i 's,MODE=DISPLAY,MODE=CONSOLE,g' /tmp/batocera-switch-updater.sh 2>/dev/null
 dos2unix /tmp/batocera-switch-updater.sh 2>/dev/null 
 chmod a+x /tmp/batocera-switch-updater.sh 2>/dev/null 
